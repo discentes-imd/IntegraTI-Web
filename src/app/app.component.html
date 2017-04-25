@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="navbar navbar-info">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-material-light-blue-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"> <img src="" type="image/png" /> IntegraTI </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-material-light-blue-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="/eventos"> Eventos </a> </li>
+      <li> <a> Repositório </a> </li>
+      <li> <a> Guia do aluno </a> </li>
+      <li> <a href="/jobs"> Jobs </a> </li>
+      <li> <a href="/about"> Sobre </a> </li>
+        <li class="active"> <a href="/login" > Login </a> </li>
+      </ul>
+
+    
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" >
+          <!--  <alert></alert>-->
+          <router-outlet></router-outlet> 
+</div>
+
+<div class="rodape text-center">
+
+<a href="https://github.com/bti-imd"> <i class="fa fa-github fa-lg" aria-hidden="true"></i> Contribua  </a>
+</div>

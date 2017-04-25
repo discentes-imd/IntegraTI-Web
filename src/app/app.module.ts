@@ -4,15 +4,29 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { routing } from './app.routing';
+import { RegisterComponent } from './register/register.component';
+import { EventosModule } from './eventos/eventos.module';
+import { JobsModule } from './jobs/jobs.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    HomeComponent,
+    RegisterComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    EventosModule,
+    JobsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

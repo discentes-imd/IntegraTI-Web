@@ -3,7 +3,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-##Install dependencies
+## Install dependencies
 Run `npm install` 
 
 ## Development server
@@ -49,9 +49,5 @@ Ideias iniciais do projeto:
 A implementação da interface [IntegraTI-Web](https://github.com/bti-imd/IntegraTI-Web) será feita para consumir os dados da aplicação [IntegraTI-API](https://github.com/bti-imd/IntegraTI-AP).
 ### Tecnologias utilizadas
 * Angular 2
-* Bootstrap 3
-* ??
+* Bootstrap material design
 
-### Padrões de projeto utilizados
-* ??
-* ??

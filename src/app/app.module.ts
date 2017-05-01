@@ -11,6 +11,8 @@ import { RegisterComponent } from './register/register.component';
 import { EventosModule } from './eventos/eventos.module';
 import { JobsModule } from './jobs/jobs.module';
 import { AboutComponent } from './about/about.component';
+import {AppConfig} from './app.config';
+import {JobService} from './_services/job.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { AboutComponent } from './about/about.component';
     EventosModule,
     JobsModule
   ],
-  providers: [],
+  providers: [
+    AppConfig,
+    JobService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

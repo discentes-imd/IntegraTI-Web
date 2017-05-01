@@ -1,3 +1,15 @@
-<p>
-  Fácil acesso a vagas de bolsas, estágios etc. vindos filtrados do SIGAA, além de outros bancos de oportunidades, e permitindo a adição de novas oportunidades pelos usuários. 
-</p>
+<div>
+  <h1 class="titulo-modulo"> Jobs </h1>
+
+  <p class="descricao-modulo"> Viu alguma vaga de emprego, bolsa ou estágio e deseja compartilhar com os colegas de curso? Trabalha numa empresa que está recrutando e deseja divulgar a vaga? O lugar é aqui! </p>
+  
+  <div class="text-right"> <button type="" class="btn btn-raised btn-info">add <i class="fa fa-plus"></i></button> </div>
+
+  <div class="listagem-eventos"> 
+    <ul>
+     <li *ngFor="let item of jobs; let i = index">
+       {{item}}
+     </li>
+    </ul>
+  </div>
+</div>

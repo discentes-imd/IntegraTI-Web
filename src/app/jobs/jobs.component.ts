@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobsComponent implements OnInit {
 
-  constructor() { }
+  jobs: any;
+  job;
+
+  constructor() { 
+    this.job = new Object();
+    this.jobs = ['a', 'b', 'c', this.job];
+  }
 
   ngOnInit() {
   }

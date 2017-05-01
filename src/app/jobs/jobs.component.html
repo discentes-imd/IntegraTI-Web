@@ -1,3 +1,23 @@
-<p>
-  Fácil acesso a vagas de bolsas, estágios etc. vindos filtrados do SIGAA, além de outros bancos de oportunidades, e permitindo a adição de novas oportunidades pelos usuários. 
-</p>
+<div>
+  <h1 class="titulo-modulo"> Jobs </h1>
+
+  <h5 class="descricao-modulo"> Viu alguma vaga de emprego, bolsa ou estágio e deseja compartilhar com os colegas de curso?  </h5>
+  <h5> Trabalha numa empresa que está recrutando e deseja divulgar a vaga? O lugar é aqui! </h5>
+  
+  <div class="text-right"> <a href="/jobs-form"> <button type="" class="btn btn-raised btn-info">add <i class="fa fa-plus"></i></button> </a> </div>
+    <ul>
+     <li *ngFor="let job of listaJobs">
+       <div class="col-md-4">
+          <div class="panel panel-default">
+           <!-- <a href="{{job.link}}"> --> <div class="panel-heading"><h4>{{job.vaga}}</h4></div> <!--</a> --> 
+            <div class="panel-body">
+              <h5>{{job.empresa}}</h5>
+              <p> <i class="fa fa-map-marker"></i> {{job.enderecoEmpresa}} </p>
+              <p> <i class="fa fa-money"></i> {{job.remuneracao}} </p>
+              <p> <i class="fa fa-info-circle"></i> {{job.descricaoVaga}} </p>
+            </div>
+          </div> 
+       </div> 
+     </li> 
+    </ul>
+</div>

@@ -1,4 +1,24 @@
-<p>
- Autogerência de minicursos e eventos discentes e docentes (“horizontalmente”) (exposição de temas, voluntariado de apresentadores etc), com anexo dos materiais usados no evento e talvez funções de divulgação por e-mail;
-</p>
-<app-evento-detalhe> </app-evento-detalhe>
+<div>
+  <h1 class="titulo-modulo"> Eventos </h1>
+
+  <h5 class="descricao-modulo"> Quer organizar e/ou divulgar um evento dentro do instituto ou relacionado à área de TI? Divulga aqui! </h5>
+  
+  <div class="text-right"> <a href="/eventos-form"> <button type="" class="btn btn-raised btn-info">add <i class="fa fa-plus"></i></button> </a> </div>
+    <ul>
+     <li *ngFor="let evento of listaEventos">
+       <div class="col-md-4">
+          <div class="panel panel-default">
+           <!-- <a href="{{job.link}}"> --> <div class="panel-heading"><h4>{{evento.titulo}}</h4></div> <!--</a> --> 
+            <div class="panel-body">
+              <h5>{{evento.tipo}}</h5>
+              <p> <i class="fa fa-map-marker"></i> {{evento.localizacao}} </p>
+              <p> <i class="fa fa-calendar"></i> {{evento.dataInicial}} - {{evento.dataFinal}} </p>
+              <p> <i class="fa fa-user"></i> Palestrante: {{evento.palestrante}} </p>
+              <p> <i class="fa fa-info-circle"> </i> {{evento.descricao}} </p>
+              <button type="" class="btn btn-info">Participar</button>
+            </div>
+          </div> 
+       </div> 
+     </li> 
+    </ul>
+</div>

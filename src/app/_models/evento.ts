@@ -7,5 +7,7 @@ export class Evento{
         public dataFinal,
         public tipoEvento:string ="",
         public organizador: string ="",
+        public palestrante:string = "",
+        public descricao:string = ""
     ){}
 }

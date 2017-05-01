@@ -14,6 +14,7 @@ import { JobsModule } from './jobs/jobs.module';
 import { AboutComponent } from './about/about.component';
 import {AppConfig} from './app.config';
 import {JobService} from './_services/job.service';
+import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {JobService} from './_services/job.service';
     HomeComponent,
     RegisterComponent,
     AboutComponent,
+    GuiaDoAlunoComponent,
   ],
   imports: [
     BrowserModule,

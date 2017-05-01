@@ -1,6 +1,7 @@
 export class Job{
 
     constructor(
+        public id:number,
         public empresa:string = "",
         public enderecoEmpresa: string = "",
         public vaga: string ="",

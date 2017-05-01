@@ -25,6 +25,8 @@
         "../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
         "../node_modules/bootstrap-material-design/dist/js/material.min.js"
       ],
       "environmentSource": "environments/environment.ts",

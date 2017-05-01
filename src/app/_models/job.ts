@@ -4,7 +4,7 @@ export class Job{
         public empresa:string = "",
         public enderecoEmpresa: string = "",
         public vaga: string ="",
-        public descricaoVaga: string = "",
+        public descricao: string = "",
         public remuneracao: string ="",
         public link: string=""
     ){}

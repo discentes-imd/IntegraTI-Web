@@ -1,0 +1,38 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Cadastrar Evento</h2>
+        <div class="form-group" >
+            <label for="titulo">Título do Evento</label>
+            <input type="text" class="form-control" name="titulo" required />
+            <div class="help-block">Título do Evento é necessário</div>
+        </div>
+        <div class="form-group">
+            <label for="localizacao">Localização</label>
+            <input type="text" class="form-control" name="localizacao" required />
+            <div class="help-block">Localização do evento é necessário</div>
+        </div>
+        <div class="form-group" >
+            <label for="descricao">Descrição do Evento</label>
+            <input type="text" class="form-control" name="descricao" />
+        </div> 
+        <div class="form-group">
+            <label for="dataInicial">Data Inicial</label>
+            <input type="text" class="form-control" name="dataInicial" />
+        </div> 
+        <div class="form-group" >
+            <label for="dataFinal">Data Final</label>
+            <input type="text" class="form-control" name="dataFinal"/>
+        </div>
+        <div class="form-group">
+          <label for="organizador"> Organizador </label>
+          <input type="text" name="organizador" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label for="palestrante"> Palestrante </label>
+          <input type="text" name="palestrante" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="cadastrar()" >Cadastrar</button>
+            <a class="btn btn-link">Cancelar</a>
+        </div>
+</div>

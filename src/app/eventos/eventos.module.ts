@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EventosComponent } from './eventos.component';
 import { EventoDetalheComponent } from './evento-detalhe/evento-detalhe.component';
+import { EventosFormComponent } from './eventos-form/eventos-form.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { EventoDetalheComponent } from './evento-detalhe/evento-detalhe.componen
   ],
   declarations: [
     EventosComponent,
-    EventoDetalheComponent
+    EventoDetalheComponent,
+    EventosFormComponent
   ],
   exports:[
     EventosComponent

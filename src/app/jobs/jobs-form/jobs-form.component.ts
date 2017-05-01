@@ -10,7 +10,7 @@ import { JobService } from './../../_services/job.service';
 })
 export class JobsFormComponent {
 
-  job:Job = new Job();
+  job:Job;
   loading=false;
 
   constructor(public jobService: JobService) { }

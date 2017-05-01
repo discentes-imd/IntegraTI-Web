@@ -1,8 +1,11 @@
 export class Job{
-    empresa: string;
-    enderecoEmpresa: string;
-    vaga: string;
-    descricaoDaVaga: string;
-    remuneracao: string;
-    linkMaisInformacoes: string;
+
+    constructor(
+        public empresa:string = "",
+        public enderecoEmpresa: string = "",
+        public vaga: string ="",
+        public descricaoVaga: string = "",
+        public remuneracao: string ="",
+        public link: string=""
+    ){}
 }

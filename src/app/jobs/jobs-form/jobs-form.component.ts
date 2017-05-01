@@ -11,11 +11,14 @@ import { JobService } from './../../_services/job.service';
 export class JobsFormComponent {
 
   job:Job = new Job();
-  constructor(public JobService: JobService) { }
+  loading=false;
 
-  onSubmit(){
-    this.JobService.jobs.push(this.job);
-    console.log(this.JobService.jobs);
+  constructor(public jobService: JobService) { }
+  cadastrar(){
+    this.loading = true;
+   // this.jobService.create(this.job)
+    this.jobService.jobs.push(this.job);
+    console.log(this.jobService.jobs);
   }
 
 }

@@ -1,3 +1,4 @@
+import { JobsFormComponent } from './jobs/jobs-form/jobs-form.component';
 import { Routes, RouterModule } from '@angular/router';
 import {ModuleWithProviders} from '@angular/core'
 
@@ -14,7 +15,8 @@ const APP_ROUTES: Routes = [
     {path: 'eventos', component: EventosComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'jobs', component: JobsComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: 'jobs-form', component: JobsFormComponent}
 
 ];
 

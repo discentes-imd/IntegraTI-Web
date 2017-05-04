@@ -1,20 +1,28 @@
-import { EventoService } from './_services/evento.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// Components 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { routing } from './app.routing';
 import { RegisterComponent } from './register/register.component';
+import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
+
+// Modules 
 import { EventosModule } from './eventos/eventos.module';
 import { JobsModule } from './jobs/jobs.module';
 import { AboutModule } from './about/about.module';
-import { AppConfig } from './app.config';
+
+// Services
+import { EventoService } from './_services/evento.service';
 import { JobService } from './_services/job.service';
-import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
+import { UsuarioService } from './_services/usuario.service';
+
+// Configs
+import { routing } from './app.routing';
+import { AppConfig } from './app.config';
 
 @NgModule({
   declarations: [
@@ -36,7 +44,8 @@ import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
   providers: [
     AppConfig,
     JobService,
-    EventoService
+    EventoService,
+    UsuarioService
   ],
   bootstrap: [AppComponent]
 })

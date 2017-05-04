@@ -11,9 +11,9 @@ import { routing } from './app.routing';
 import { RegisterComponent } from './register/register.component';
 import { EventosModule } from './eventos/eventos.module';
 import { JobsModule } from './jobs/jobs.module';
-import { AboutComponent } from './about/about.component';
-import {AppConfig} from './app.config';
-import {JobService} from './_services/job.service';
+import { AboutModule } from './about/about.module';
+import { AppConfig } from './app.config';
+import { JobService } from './_services/job.service';
 import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
 
 @NgModule({
@@ -22,7 +22,6 @@ import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    AboutComponent,
     GuiaDoAlunoComponent,
   ],
   imports: [
@@ -31,7 +30,8 @@ import { GuiaDoAlunoComponent } from './guia-do-aluno/guia-do-aluno.component';
     HttpModule,
     routing,
     EventosModule,
-    JobsModule
+    JobsModule,
+    AboutModule
   ],
   providers: [
     AppConfig,

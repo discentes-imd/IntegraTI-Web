@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 // Modules 
 import { EventosModule } from './eventos/eventos.module';
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { EventoService } from './_services/evento.service';
 import { JobService } from './_services/job.service';
 import { UsuarioService } from './_services/usuario.service';
+import { AuthGuard } from './_guards/auth.guard';
 
 // Configs
 import { AppConfig } from './app.config';
@@ -31,23 +33,25 @@ import { AppConfig } from './app.config';
     LoginComponent,
     HomeComponent,
     TopMenuComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
     EventosModule,
     JobsModule,
     AboutModule,
     RegisterModule,
-    GuiaDoAlunoModule
+    GuiaDoAlunoModule,
+    AppRoutingModule
   ],
   providers: [
     AppConfig,
     JobService,
     EventoService,
-    UsuarioService
+    UsuarioService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })

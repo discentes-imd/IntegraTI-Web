@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
 
 // Modules 
 import { EventosModule } from './eventos/eventos.module';
@@ -29,6 +30,7 @@ import { AppConfig } from './app.config';
     AppComponent,
     LoginComponent,
     HomeComponent,
+    TopMenuComponent,
   ],
   imports: [
     BrowserModule,

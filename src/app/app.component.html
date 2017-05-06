@@ -1,36 +1,10 @@
+<app-top-menu></app-top-menu>
 
-<div class="navbar navbar-info">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-material-light-blue-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" routerLink=""> <img src="" type="image/png" /> IntegraTI </a>
-    </div>
-    <div class="navbar-collapse collapse navbar-material-light-blue-collapse">
-      <ul class="nav navbar-nav navbar-right">
-      <li routerLinkActive="active"> <a routerLink="/eventos"> Eventos </a> </li>
-      <li routerLinkActive="active"> <a> Repositório </a> </li>
-      <li routerLinkActive="active"> <a routerLink="/guia-do-aluno"> Guia do aluno </a> </li>
-      <li routerLinkActive="active"> <a routerLink="/jobs"> Jobs </a> </li>
-      <li routerLinkActive="active"> <a routerLink="/about"> Sobre </a> </li>
-      <li routerLinkActive="active"> <a routerLink="/login" > Login </a> </li>
-      </ul>
-
-    
-    </div>
-  </div>
-</div>
-
-
-<div class="container-fluid" >
-          <!--  <alert></alert>-->
-          <router-outlet></router-outlet> 
+<div class="container-fluid">
+  <!--  <alert></alert>-->
+  <router-outlet></router-outlet>
 </div>
 
 <div class="rodape text-center">
-
-<a href="https://github.com/bti-imd"> <i class="fa fa-github fa-lg" aria-hidden="true"></i> Contribua  </a>
+  <a href="https://github.com/bti-imd"> <i class="fa fa-github fa-lg" aria-hidden="true"></i> Contribua </a>
 </div>

@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AboutComponent } from './about.component';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { AboutRoutingModule } from './about.routing.module';
+
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        AboutRoutingModule
     ],
     declarations: [
         AboutComponent,

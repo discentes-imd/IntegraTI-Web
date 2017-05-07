@@ -23,6 +23,9 @@ import { EventoService } from './_services/evento.service';
 import { JobService } from './_services/job.service';
 import { UsuarioService } from './_services/usuario.service';
 import { AuthGuard } from './_guards/auth.guard';
+import { LoginGuard } from './_guards/login.guard';
+
+import { AuthService } from './_services/auth.service';
 
 // Configs
 import { AppConfig } from './app.config';
@@ -51,7 +54,9 @@ import { AppConfig } from './app.config';
     JobService,
     EventoService,
     UsuarioService,
-    AuthGuard
+    AuthService,
+    AuthGuard,
+    LoginGuard
   ],
   bootstrap: [AppComponent]
 })

@@ -6,9 +6,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+import { LoginGuard } from './_guards/login.guard';
+
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
+    { path: 'login', component: LoginComponent, canActivate: [LoginGuard] },
     { path: 'register', component: RegisterComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '404', component: NotFoundComponent },

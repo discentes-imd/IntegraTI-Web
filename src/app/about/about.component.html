@@ -1,138 +1,64 @@
-<div> 
+<div>
   <h1> Quem somos? </h1>
   <p> Conheça os idealizadores, desenvolvedores e apoiadores desta iniciativa </p>
   <br>
-  <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
-  <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-     ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-     fugiat nulla pariatur. Excepteur sint 
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
-
+  <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+  <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
 
 
   <small> Contato: integrati@imd.ufrn.br </small>
 
   <div class="col-md-12 listagem">
     <div class="row">
-      <div class="col-md-4 dev">
-          <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/sports/" class="img-responsive img-circle "/>
-          </div>
-          <div class="descricao-contribuidor col-md-7">
-            <h4> Marcell Guilherme Costa</h4>
-            <p> #backend #python #git</p>
-            <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
-            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <br>
-            <small> email@email.br </small>
-          </div>
-      </div>
-
-      <div class="col-md-4 dev">
-         <div class="col-md-5">
-          <img src="http://lorempixel.com/240/240/city" class="img-responsive img-circle "/>
-        </div>
-        <div class="descricao-contribuidor col-md-7">
-          <h4> Rodrigo Nunes de Castro</h4>
-          <p> #backend #python #git</p>
-          <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
-          <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <br>
-          <small> rodrigondec@gmail.com </small>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-          <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/nature" class="img-responsive img-circle "/>
-          </div>
-          <div class="descricao-contribuidor col-md-7">
-            <h4> Sarah Raquel de Lima</h4>
-            <p> #frontend #angular</p>
-            <a href="https://github.com/sarahraquel"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a>
-            <br>
-            <small> sarah@imd.ufrn.br </small>
-          </div>
-      </div>
+      <profile-card [user]="users[0]"></profile-card>
+      <profile-card [user]="users[1]"></profile-card>
+      <profile-card [user]="users[2]"></profile-card>
     </div>
 
     <div class="row">
-      <div class="col-md-4">
-          <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/food/" class="img-responsive img-circle "/>
-          </div>
-          <div class="descricao-contribuidor col-md-7">
-            <h4> Pedro Raoni </h4>
-            <p> #projectManager </p>
-            <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
-            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <br>
-            <small> email@email.com </small>
-          </div>
-      </div>
-
-      <div class="col-md-4 dev">
-          <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/people/" class="img-responsive img-circle "/>
-          </div>
-          <div class="descricao-contribuidor col-md-7">
-            <h4> Weslen Breno</h4>
-            <p> #frontend #angular</p>
-            <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
-            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <br>
-            <small> email@email.br </small>
-          </div>
-      </div>
-
-      <div class="col-md-4 dev">
-         <div class="col-md-5">
-          <img src="http://lorempixel.com/240/240/transport/" class="img-responsive img-circle "/>
-        </div>
-        <div class="descricao-contribuidor col-md-7">
-          <h4> Gelly Viana</h4>
-          <p> #frontend #projectManager</p>
-          <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
-          <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <br>
-          <small> email@email.com </small>
-        </div>
-      </div>
-
-      
+      <profile-card [user]="users[3]"></profile-card>
+      <profile-card [user]="users[4]"></profile-card>
+      <profile-card [user]="users[5]"></profile-card>
     </div>
 
-
-  <div class="col-md-12 listagem">
-    <h2> Apoio </h2>
-<hr/>
-    <div class="row">
-      <div class="col-md-4 dev">
+    <div class="col-md-12 listagem">
+      <h2> Apoio </h2>
+      <hr/>
+      <div class="row">
+        <div class="col-md-4 dev">
           <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/sports/" class="img-responsive img-circle "/>
+            <img src="http://lorempixel.com/240/240/sports/" class="img-responsive img-circle " />
           </div>
           <div class="descricao-contribuidor col-md-7">
             <h4> Diretoria de TI do IMD</h4>
             <small> email@email.br </small>
           </div>
-      </div>
-      <div class="col-md-4 dev">
+        </div>
+        <div class="col-md-4 dev">
           <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/sports/" class="img-responsive img-circle "/>
+            <img src="http://lorempixel.com/240/240/sports/" class="img-responsive img-circle " />
           </div>
           <div class="descricao-contribuidor col-md-7">
             <h4> Professor Nome do Professor</h4>
             <small> email@email.br </small>
           </div>
-      </div>
-      <div class="col-md-4 dev">
+        </div>
+        <div class="col-md-4 dev">
           <div class="col-md-5">
-            <img src="http://lorempixel.com/240/240/city/" class="img-responsive img-circle "/>
+            <img src="http://lorempixel.com/240/240/city/" class="img-responsive img-circle " />
           </div>
           <div class="descricao-contribuidor col-md-7">
             <h4> Empresa DNA Sistemas</h4>
             <small> email@email.br </small>
           </div>
+        </div>
       </div>
     </div>
-  </div>
-
-
   </div>
 </div>

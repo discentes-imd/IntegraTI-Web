@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 //import { Http, Headers, RequestOptions, Response } from '@angular/http';
 
 //import { AppConfig } from '../app.config';
-import { Job } from '../_models/job';
+import { Job } from '../_models/job.model';
 
 @Injectable()
 export class JobService{

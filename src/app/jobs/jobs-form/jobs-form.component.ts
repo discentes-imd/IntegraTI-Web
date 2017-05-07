@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { Job } from './../../_models/job';
+import { Job } from './../../_models/job.model';
 import { JobService } from './../../_services/job.service';
 
 @Component({
@@ -10,15 +11,19 @@ import { JobService } from './../../_services/job.service';
 })
 export class JobsFormComponent {
 
-  job:Job;
-  loading=false;
+  job: Job;
+  loading = false;
 
-  constructor(public jobService: JobService) { }
-  cadastrar(){
+  constructor(private jobService: JobService, private router: Router) { }
+
+  cancelar() {
+    this.router.navigate(['/jobs']);  
+  }
+
+  cadastrar() {
     this.loading = true;
-   // this.jobService.create(this.job)
+    // this.jobService.create(this.job)
     this.jobService.jobs.push(this.job);
     console.log(this.jobService.jobs);
   }
-
 }

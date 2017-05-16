@@ -1,0 +1,55 @@
+.about-profile {
+  margin-top: 30;
+  margin-bottom: 30px;
+}
+
+.about-profile h4,
+.about-profile span,
+.about-profile small {
+  text-align: center;
+  display: block;
+}
+
+.about-profile .img-overlay {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+
+.about-profile .img-overlay img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.about-profile .img-overlay::before {
+  background-color: black;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  height: 120px;
+  left: calc(50% - 60px);
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  width: 120px;
+  transition: 0.3s ease opacity;
+}
+
+.about-profile .img-overlay:hover::before {
+  opacity: 0.6;
+}
+
+.about-profile .img-overlay:hover a {
+  opacity: 1;
+}
+
+.about-profile .img-overlay a {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  opacity: 0;
+}

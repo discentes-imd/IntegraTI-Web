@@ -1,12 +1,11 @@
-<div class="col-md-4">
-  <div class="col-md-5">
-    <img src="{{user?.photo}}" class="img-responsive img-circle " />
+<div class="col-md-4 about-profile">
+  <div class="img-overlay">
+    <a href="https://github.com/sarahraquel" target="blank">
+      <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <img src="http://lorempixel.com/240/240/sports" class="img-responsive img-circle" />
   </div>
-  <div class="descricao-contribuidor col-md-7">
-    <h4> {{ user?.nome }}</h4>
-    <p> {{ habilidades }}</p>
-    <a href="https://github.com/sarahraquel"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a>
-    <br>
-    <small> {{ user?.email}} </small>
-  </div>
+  <h4> {{ user?.nome }}</h4>
+  <span> {{ habilidades }}</span>
+  <small> {{ user?.email}} </small>
 </div>

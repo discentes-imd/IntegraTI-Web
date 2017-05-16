@@ -5,7 +5,7 @@ Veja nossa [wiki](https://github.com/bti-imd/IntegraTI-Web/wiki).
 # Instruções 
 ## Primeiro setup 
 1. Baixar o [Nodejs](https://nodejs.org/en/);
-2. Instalar o [angular-cli](npm install -g @angular/cli);
+2. Instalar o Angular-cli `npm install -g @angular/cli`;
 
 ## Clone o repositório
 `git clone origin https://github.com/discentes-imd/IntegraTI-Web.git`

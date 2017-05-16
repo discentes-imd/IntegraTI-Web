@@ -4,7 +4,6 @@
 }
 
 .about-profile h4,
-.about-profile span,
 .about-profile small {
   text-align: center;
   display: block;
@@ -17,22 +16,22 @@
 }
 
 .about-profile .img-overlay img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
 }
 
 .about-profile .img-overlay::before {
-  background-color: black;
-  border-radius: 50%;
   content: " ";
   display: block;
-  height: 120px;
-  left: calc(50% - 60px);
-  margin: 0 auto;
-  opacity: 0;
   position: absolute;
-  width: 120px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
   transition: 0.3s ease opacity;
 }
 
@@ -52,4 +51,19 @@
   left: calc(50% - 15px);
   top: calc(50% - 15px);
   opacity: 0;
+}
+
+.about-profile .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-profile .skills .skill {
+  margin: 2px 2px;
+  min-width: 40%;
+  cursor: default;
+  font-size: 9pt;
+  font-weight: 400;
 }

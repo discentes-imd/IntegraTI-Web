@@ -6,6 +6,8 @@
     <img src="http://lorempixel.com/240/240/sports" class="img-responsive img-circle" />
   </div>
   <h4> {{ user?.nome }}</h4>
-  <span> {{ habilidades }}</span>
+  <div class="skills">
+    <span *ngFor="let habilidade of habilidades" class="skill label label-primary"> {{ habilidade }}</span>
+  </div>
   <small> {{ user?.email}} </small>
 </div>

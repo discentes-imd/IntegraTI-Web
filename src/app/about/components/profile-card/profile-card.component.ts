@@ -15,6 +15,6 @@ export class ProfileCardComponent implements OnInit {
   ngOnInit() {
     // Mostrando as 3 primeiras tecnologias com # na frente
     // Da pra fazer mais otimizado com Pipes
-    this.habilidades = this.user.skills.slice(0,3).map((x) => '#' + x).join(" ")
+    this.habilidades = this.user.skills.slice(0,3).map((x) => '#' + x)
   }
 }

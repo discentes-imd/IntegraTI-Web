@@ -1,5 +1,5 @@
 
-# Integrati
+# IntegraTI-Web
 Veja nossa [wiki](https://github.com/bti-imd/IntegraTI-Web/wiki).
 
 # Instruções 

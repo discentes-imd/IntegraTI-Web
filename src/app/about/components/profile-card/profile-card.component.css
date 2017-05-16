@@ -1,6 +1,7 @@
 .about-profile {
   margin-top: 30;
   margin-bottom: 30px;
+  min-height: 220px;
 }
 
 .about-profile h4,

@@ -1,13 +1,17 @@
 <div class="col-md-4 about-profile">
-  <div class="img-overlay">
-    <a href="https://github.com/sarahraquel" target="blank">
-      <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-    </a>
-    <img src="http://lorempixel.com/240/240/sports" class="img-responsive img-circle" />
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="img-overlay">
+        <a href="https://github.com/sarahraquel" target="blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <img src="http://lorempixel.com/240/240/sports" class="img-responsive img-circle" />
+      </div>
+      <h4> {{ firstName + ' ' + lastName }}</h4>
+      <div class="skills">
+        <span *ngFor="let habilidade of habilidades" class="skill label label-primary"> {{ habilidade }}</span>
+      </div>
+      <small> {{ user?.email}} </small>
+    </div>
   </div>
-  <h4> {{ user?.nome }}</h4>
-  <div class="skills">
-    <span *ngFor="let habilidade of habilidades" class="skill label label-primary"> {{ habilidade }}</span>
-  </div>
-  <small> {{ user?.email}} </small>
 </div>

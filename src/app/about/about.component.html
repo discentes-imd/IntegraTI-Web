@@ -27,6 +27,10 @@
       <profile-card [user]="users[5]"></profile-card>
     </div>
 
+    <div class="row">
+      <profile-card *ngFor="let contributor of contributors" [user]="contributor"></profile-card>
+    </div>
+
     <div class="col-md-12 listagem">
       <h2> Apoio </h2>
       <hr/>

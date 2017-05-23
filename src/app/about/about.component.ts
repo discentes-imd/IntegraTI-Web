@@ -21,19 +21,21 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.githubService.getContributors()
       .subscribe(data => {
-        this.contributors = data.map(this.contributorToUser);
+        this.contributors =
+          data.map(this.contributorToUser)
+            .reduce(this.removeDuplicatedContributors, []);
       });
   }
 
-  contributorToUser = contributor => {
-    const { author } = contributor;
+  private contributorToUser = contributor => {
+    const { author, user } = contributor;
 
     const languages =
       contributor.repos
         .sort(this.sortByStars)
-        .reduce(this.getLanguagesFromRepos, []);
+        .reduce(this.getLanguagesFromRepos, [])
 
-    return new Usuario(author.id, author.login, author.email, author.avatar_url, languages);
+    return new Usuario(user.id, user.name, !!user.email ? user.email : '', user.avatar_url, languages);
   }
 
   private sortByStars(a, b) {
@@ -47,6 +49,17 @@ export class AboutComponent implements OnInit {
         return [ ...previous, repo.language ]
       } else {
         return previous;
+      }
+  }
+
+  private removeDuplicatedContributors(previous, contributor) {
+      const duplicated =
+        previous.filter(previousContributor => previousContributor.id_user === contributor.id_user).length > 0;
+
+      if (duplicated) {
+          return previous;
+      } else {
+        return [ ...previous, contributor ]
       }
   }
 }

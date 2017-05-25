@@ -56,10 +56,25 @@ export class AboutComponent implements OnInit {
       const duplicated =
         previous.filter(previousContributor => previousContributor.id_user === contributor.id_user).length > 0;
 
-      if (duplicated) {
+      // id 18171845 = angular-cli
+      if (duplicated || contributor.id_user === 18171845) {
           return previous;
       } else {
         return [ ...previous, contributor ]
       }
+  }
+
+  formatGrid(users) {
+    return users.reduce((previous, actual, index) => {
+      const rows = previous.length
+
+      if (index % 3 === 0 && index > 0) {
+          previous.push([actual])
+      } else {
+          previous[rows -1].push(actual)
+      }
+
+      return previous
+    }, [[]])
   }
 }

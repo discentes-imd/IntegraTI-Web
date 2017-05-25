@@ -16,20 +16,19 @@
 
   <div class="col-md-12 listagem">
     <div class="row">
-      <profile-card [user]="users[0]"></profile-card>
-      <profile-card [user]="users[1]"></profile-card>
-      <profile-card [user]="users[2]"></profile-card>
+      <div class="col-md-4" *ngFor="let user of users; let i = index">
+        <profile-card [user]="user"></profile-card>
+        <div class="clearfix" *ngIf="i % 3 === 0">
+      </div>
     </div>
 
-    <div class="row">
-      <profile-card [user]="users[3]"></profile-card>
-      <profile-card [user]="users[4]"></profile-card>
-      <profile-card [user]="users[5]"></profile-card>
+    <h2 class="title" >Contribuidores no Github</h2>
+    <div class="row" *ngFor="let row of formatGrid(contributors)">
+      <div class="col-md-4" *ngFor="let item of row">
+        <profile-card [user]="item"></profile-card>
+      </div>
     </div>
 
-    <div class="row">
-      <profile-card *ngFor="let contributor of contributors" [user]="contributor"></profile-card>
-    </div>
 
     <div class="col-md-12 listagem">
       <h2> Apoio </h2>
@@ -64,5 +63,6 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>

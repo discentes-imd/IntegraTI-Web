@@ -35,6 +35,6 @@ export class ProfileCardComponent implements OnInit {
       }, [])
 
     this.firstName = firstName
-    this.lastName = lastName
+    this.lastName = lastName ? lastName : ''
   }
 }

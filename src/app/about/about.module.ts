@@ -9,7 +9,7 @@ import { AboutRoutingModule } from './about.routing.module';
 @NgModule({
     imports: [
         CommonModule,
-        AboutRoutingModule
+        AboutRoutingModule,
     ],
     declarations: [
         AboutComponent,

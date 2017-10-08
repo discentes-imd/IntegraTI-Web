@@ -16,11 +16,6 @@
 
   <div class="col-md-12 listagem">
     <div class="row">
-      <div class="col-md-4" *ngFor="let user of users; let i = index">
-        <profile-card [user]="user"></profile-card>
-        <div class="clearfix" *ngIf="i % 3 === 0">
-      </div>
-    </div>
 
     <h2 class="title" >Contribuidores no Github</h2>
     <div class="row" *ngFor="let row of formatGrid(contributors)">

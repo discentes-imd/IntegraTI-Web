@@ -6,7 +6,7 @@ import { EventosFormComponent } from './eventos-form/eventos-form.component';
 import { AuthGuard } from '../_guards/auth.guard';
 
 export const eventosRoutes: Routes = [
-    { path: 'eventos', component: EventosComponent, canActivate:[AuthGuard] },
+    { path: 'eventos', component: EventosComponent},
     { path: 'eventos/novo', component: EventosFormComponent },
 ];
 

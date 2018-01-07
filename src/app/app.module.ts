@@ -43,11 +43,7 @@ import { AppConfig } from './app.config';
     BrowserModule,
     FormsModule,
     HttpModule,
-    EventosModule,
-    JobsModule,
     AboutModule,
-    RegisterModule,
-    GuiaDoAlunoModule,
     AppRoutingModule
   ],
   providers: [

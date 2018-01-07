@@ -12,14 +12,7 @@ import { JobsFormComponent } from './jobs/jobs-form/jobs-form.component';
 import { EventosFormComponent } from './eventos/eventos-form/eventos-form.component';
 const APP_ROUTES: Routes = [
     {path: '', component: HomeComponent},
-    { path: 'login', component:  LoginComponent  },
-    {path: 'eventos', component: EventosComponent},
-    {path: 'register', component: RegisterComponent},
-    {path: 'jobs', component: JobsComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'jobs-form', component: JobsFormComponent},
-    {path: 'guia-do-aluno', component: GuiaDoAlunoComponent},
-    {path: 'eventos-form', component: EventosFormComponent},
 
 ];
 

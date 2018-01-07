@@ -10,8 +10,6 @@ import { LoginGuard } from './_guards/login.guard';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'login', component: LoginComponent, canActivate: [LoginGuard] },
-    { path: 'register', component: RegisterComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '404', component: NotFoundComponent },
     { path: '**', redirectTo: '/404', pathMatch: 'full' }
